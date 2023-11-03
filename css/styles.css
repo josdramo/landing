@@ -8213,7 +8213,7 @@ textarea.form-control-lg {
 }
 
 .bg-gradient {
-  background-image: var(--bs-gradient) !important;
+  background-image: var(--bs-gradient);
 }
 
 .user-select-all {
@@ -10849,4 +10849,22 @@ textarea.form-control-lg {
   background-color: rgba(244, 157, 82, 0.5);
   border-radius: 20px;
   padding-bottom: 15px;
+  gap: 20px;
+}
+
+.icono {
+  height: 50px;
+  width: 50px;
+  margin-top: 5px;
+  margin-right: 3px;
+}
+
+.imagenes {
+  width: 420px;
+  height: 420;
+}
+
+.logo {
+  width: 100px;
+  height: 40px;
 }
