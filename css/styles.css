@@ -7545,6 +7545,11 @@ textarea.form-control-lg {
   margin-left: 1.5rem !important;
 }
 
+.mx-4_5 {
+  margin-right: 2.5rem !important;
+  margin-left: 2.5rem !important;
+}
+
 .mx-5 {
   margin-right: 3rem !important;
   margin-left: 3rem !important;
@@ -7724,6 +7729,10 @@ textarea.form-control-lg {
 
 .p-5 {
   padding: 3rem !important;
+}
+
+.p-6 {
+  padding: 4rem !important;
 }
 
 .px-0 {
@@ -10849,7 +10858,6 @@ textarea.form-control-lg {
   background-color: rgba(244, 157, 82, 0.5);
   border-radius: 20px;
   padding-bottom: 15px;
-  gap: 20px;
 }
 
 .icono {
@@ -10867,4 +10875,5 @@ textarea.form-control-lg {
 .logo {
   width: 100px;
   height: 40px;
+  margin-top: 6px;
 }
