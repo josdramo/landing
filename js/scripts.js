@@ -5,3 +5,15 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".navbar-container");
+
+    window.addEventListener("scroll", function () {
+        if (window.pageYOffset > navbar.offsetTop) {
+            navbar.classList.add("fixed-top");
+        } else {
+            navbar.classList.remove("fixed-top");
+        }
+    });
+});
