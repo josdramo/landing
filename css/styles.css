@@ -10863,8 +10863,7 @@ textarea.form-control-lg {
 .icono {
   height: 50px;
   width: 50px;
-  margin-top: 5px;
-  margin-right: 3px;
+
 }
 
 .imagenes {
@@ -10876,4 +10875,14 @@ textarea.form-control-lg {
   width: 100px;
   height: 40px;
   margin-top: 6px;
+}
+
+.icono2 {
+  width: 30px;
+  height: 60px;
+}
+
+.icono3 {
+  width: 100px;
+  height: 100px;
 }
