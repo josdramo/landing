@@ -17,3 +17,69 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+function setupImageBehavior(imageId, iconId) {
+    const image = document.getElementById(imageId);
+    const icon = document.getElementById(iconId);
+
+    image.addEventListener("mouseenter", function () {
+        image.style.transform = "scale(1.1)";
+    });
+
+    image.addEventListener("mouseleave", function () {
+        image.style.transform = "scale(1)";
+    });
+
+    image.addEventListener("click", function () {
+        const previewImage = document.createElement("img");
+        previewImage.src = image.src;
+        previewImage.style.maxWidth = "40%"; // Ancho máximo
+        previewImage.style.maxHeight = "40%"; // Alto máximo
+        previewImage.style.backgroundColor = "transparent";
+
+        const lightboxContent = document.querySelector(".lightbox-content");
+        lightboxContent.innerHTML = ""; // Limpiar cualquier contenido previo
+        lightboxContent.appendChild(previewImage);
+
+        icon.style.display = "block"; // Mostrar el icono de ojo
+        icon.style.position = "absolute";
+        icon.style.top = "50%";
+        icon.style.left = "50%";
+        icon.style.transform = "translate(-50%, -50%)";
+    });
+}
+
+const images = document.querySelectorAll(".imagenes");
+
+images.forEach((image, index) => {
+    const icon = document.getElementById(`icon-${index + 1}`);
+    setupImageBehavior(`image-${index + 1}`, `icon-${index + 1}`);
+});
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const closeLightbox = document.getElementById("close-lightbox");
+const lightboxContent = document.querySelector(".lightbox-content");
+
+
+images.forEach((image, index) => {
+    image.addEventListener("click", function () {
+        lightbox.style.display = "flex";
+        lightboxImage.src = image.src;
+    });
+});
+
+closeLightbox.addEventListener("click", function () {
+    lightbox.style.display = "none";
+});
+
+lightbox.addEventListener("click", function (event) {
+    if (event.target === lightbox) {
+        lightbox.style.display = "none";
+    }
+});
+
+lightboxContent.addEventListener("click", function () {
+    lightbox.style.display = "none";
+});
+
