@@ -10900,3 +10900,7 @@ textarea.form-control-lg {
   width: 100px;
   height: 100px;
 }
+
+.color {
+  background-color: #FFE57A;
+}
