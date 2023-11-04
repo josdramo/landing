@@ -33,8 +33,8 @@ function setupImageBehavior(imageId, iconId) {
     image.addEventListener("click", function () {
         const previewImage = document.createElement("img");
         previewImage.src = image.src;
-        previewImage.style.maxWidth = "40%"; // Ancho máximo
-        previewImage.style.maxHeight = "40%"; // Alto máximo
+        previewImage.style.maxWidth = "60%"; // Ancho máximo
+        previewImage.style.maxHeight = "60%"; // Alto máximo
         previewImage.style.backgroundColor = "transparent";
 
         const lightboxContent = document.querySelector(".lightbox-content");
