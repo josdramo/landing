@@ -10911,6 +10911,18 @@ textarea.form-control-lg {
   font-family: 'Satisfy', cursive;
 }
 
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.abyssinica {
+  font-family: 'Abyssinica SIL', serif;;
+}
+
+.gentium {
+  font-family: 'Gentium Book Plus', serif;
+}
+
 .lightbox-container {
   display: none;
   position: fixed;
