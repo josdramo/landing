@@ -9511,6 +9511,12 @@ textarea.form-control-lg {
     margin-right: 3rem !important;
     margin-left: 3rem !important;
   }
+
+  .mx-lg-6 {
+    margin-right: 6rem !important;
+    margin-left: 6rem !important;
+  }
+
   .mx-lg-10 {
     margin-right: 25rem !important;
     margin-left: 25rem !important;
